@@ -66,10 +66,9 @@ const number4 = ()=>{
 
 const number5 = (string)=>{
   let reverseString = '';
-  for (i=string.length; string.length>=i; i--){
-    reverseString = reverseString+string[i];
+  for (i=string.length - 1; i>=0; i= i-1){
+    reverseString += string[i];
   }
   return reverseString;
   }
-  
-console.log(number5('alo'));
+
